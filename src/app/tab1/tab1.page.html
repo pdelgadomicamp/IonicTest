@@ -1,11 +1,39 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [style.visibility]="content_visibility">
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 1
+      QR Code
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <h1>Hola Mundo</h1>
+<ion-content [fullscreen]="true" [style.visibility]="content_visibility">
+
+  <ion-item>
+    <ion-label position="stacked">Text to show in QR Code</ion-label>
+    <ion-input id="generateqr" [clearInput]="true" placeholder="Enter text" value=""></ion-input>
+
+    <ion-button slot="end" (click)="changeQRCode()">Generate QR</ion-button>
+  </ion-item>
+
+  <ion-card class="ion-text-center">
+    <ion-card-content>
+      <!--This is the way how we do create a QRcode-->
+      <qrcode [qrdata]="qrCodeString" [width]="250" [errorCorrectionLevel]="'M'">
+        
+      </qrcode>
+      <!------------------------------->
+    </ion-card-content>
+  </ion-card>
+
+  <!-- How do we scan  QR code-->
+  <ion-button class="ion-margin" (click)="startScan()" expand="block" fill="clear" shape="round">
+    Scan QR Code
+  </ion-button>
+
+  <ion-item *ngIf="scannedResult">
+    <ion-label class="ion-text-wrap">Scanned Result: <a href="{{scannedResult}}">{{scannedResult}}</a></ion-label>
+    <!--<ion-toggle slot="end"></ion-toggle>-->
+  </ion-item>
+
+    
 </ion-content>

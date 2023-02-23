@@ -7,6 +7,8 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
 
+import { PreviewAnyFile } from '@ionic-native/preview-any-file/ngx';
+
 @NgModule({
   imports: [
     IonicModule,
@@ -14,6 +16,9 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
     FormsModule,
     ExploreContainerComponentModule,
     Tab3PageRoutingModule
+  ],
+  providers: [
+    PreviewAnyFile
   ],
   declarations: [Tab3Page]
 })
