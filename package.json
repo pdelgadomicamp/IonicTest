@@ -37,7 +37,7 @@
     "cordova": "^11.1.0",
     "cordova-plugin-preview-any-file": "^0.2.9",
     "ionicons": "^6.0.3",
-    "rxjs": "~7.5.0",
+    "rxjs": "^6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
