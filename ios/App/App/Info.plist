@@ -2,22 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!--Bluetooth set up-->
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Uses Bluetooth to connect and interact with peripheral BLE devices.</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>bluetooth-central</string>
-	</array>
-	
-	<!--Scan QR Code set up-->
-	<key>NSCameraUsageDescription</key>
-  	<string>Please allow us camera access to Scan QR Code</string>
-
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-        <string>testApp</string>
+        <string>ionicTest</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

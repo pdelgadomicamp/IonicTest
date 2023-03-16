@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.pablodelgado.ionictest;
 
 import com.getcapacitor.BridgeActivity;
 
