@@ -35,6 +35,7 @@
     "angularx-qrcode": "^15.0.1",
     "capacitor-blob-writer": "^1.1.4",
     "cordova": "^11.1.0",
+    "cordova-plugin-ionic": "5.5.3",
     "cordova-plugin-preview-any-file": "^0.2.9",
     "ionicons": "^6.0.3",
     "rxjs": "^6.6.0",
